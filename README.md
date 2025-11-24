@@ -33,7 +33,7 @@ The project runs end-to-end every day and generates:
 
 ```mermaid
 flowchart TD
-    A[Airflow DAG\n(dq_pipeline)] -->  B[API Fetcher\n(fetch_all_data)]
+    A[Airflow DAG\n(pipeline)] -->  B[API Fetcher\n(fetch_all_data)]
     B --> C[Raw Layer\nJSON files]
     C --> D[PySpark ETL\n(spark_etl.py)]
     D --> E[Bronze Layer]
@@ -208,5 +208,6 @@ After a successful run, you will see:
 ✔️ ETL logs
 ✔️ AI summary
 ✔️ Email alerts (if needed)
+
 
 
