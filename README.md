@@ -1,5 +1,5 @@
 
-# 🚀 **Agentic Data Quality Copilot — End-to-End Airflow + PySpark + Agentic AI Pipeline**
+#  **Agentic Data Quality Copilot — End-to-End Airflow + PySpark + Agentic AI Pipeline**
 
 ### **Modern Data Engineering Pipeline with Airflow • PySpark • Delta Bronze Layer • Agentic AI Alerts (via OpenAI)**
 
@@ -7,7 +7,7 @@ Built by: **Balaji Viswanathan**
 
 ---
 
-## 📌 **Project Overview**
+##  **Project Overview**
 
 This project is a fully automated **Agentic Data Quality Pipeline** that fetches data from APIs, performs ETL using **PySpark**, analyzes the pipeline quality using **Agentic AI**, and sends automatic alerts using Airflow.
 
@@ -21,16 +21,16 @@ The pipeline combines:
 
 The project runs end-to-end every day and generates:
 
-✔️ Raw data
-✔️ Cleaned Bronze layer
-✔️ ETL logs
-✔️ Agent Data Quality summary
-✔️ Email alerts if issues found
+ Raw data
+ Cleaned Bronze layer
+ ETL logs
+ Agent Data Quality summary
+ Email alerts if issues found
 
 ---
 
 
-## 📂 **Project Structure**
+##  **Project Structure**
 
 ```
 agentic-data-quality-copilot/
@@ -52,9 +52,9 @@ agentic-data-quality-copilot/
 
 ---
 
-# ⚙️ **Pipeline Steps**
+#  **Pipeline Steps**
 
-## 1️⃣ API Fetcher (Raw Layer)
+## 1️ API Fetcher (Raw Layer)
 
 * Pulls products, users, and orders from a public dummy API
 * Saves into:
@@ -67,7 +67,7 @@ agentic-data-quality-copilot/
 
 ---
 
-## 2️⃣ PySpark ETL (Bronze Layer)
+## 2️ PySpark ETL (Bronze Layer)
 
 * Reads the raw data
 * Normalizes nested JSON
@@ -82,7 +82,7 @@ opt/airflow/data/bronze/orders/
 
 ---
 
-## 3️⃣ Agentic AI (Data Quality Reasoning)
+## 3️ Agentic AI (Data Quality Reasoning)
 
 The AI:
 
@@ -104,13 +104,13 @@ Output saved to:
 
 ---
 
-## 4️⃣ Airflow Email Alerts
+## 4️ Airflow Email Alerts
 
 If the AI finds issues → email is sent.
 
 ---
 
-# 🐳 **Run the Entire Project Using Docker**
+#  **Run the Entire Project Using Docker**
 
 ### **Start Services**
 
@@ -142,7 +142,7 @@ This runs:
 
 ---
 
-# 📑 **Agent Summary Example**
+#  **Agent Summary Example**
 
 Example output:
 
@@ -156,7 +156,7 @@ ISSUES_FOUND=True
 
 ---
 
-# 📧 **Automatic Email Example**
+#  **Automatic Email Example**
 
 ```
 Subject: Data Quality Issue Detected
@@ -172,7 +172,7 @@ ISSUES_FOUND=True
 
 ---
 
-# 🧠 **Tech Used**
+#  **Tech Used**
 
 | Component     | Technology             |
 | ------------- | ---------------------- |
@@ -186,7 +186,7 @@ ISSUES_FOUND=True
 
 ---
 
-# 🏁 **End-to-End Pipeline Output**
+#  **End-to-End Pipeline Output**
 
 After a successful run, you will see:
 
@@ -195,6 +195,7 @@ After a successful run, you will see:
 ✔️ ETL logs
 ✔️ AI summary
 ✔️ Email alerts (if needed)
+
 
 
 
