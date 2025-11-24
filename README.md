@@ -29,19 +29,6 @@ The project runs end-to-end every day and generates:
 
 ---
 
-## 🏗️ **Architecture**
-
-```mermaid
-flowchart TD
-    A[Airflow DAG\n] -->  B[API Fetcher\n(fetch_all_data)]
-    B --> C[Raw Layer\nJSON files]
-    C --> D[PySpark ETL\n(spark_etl.py)]
-    D --> E[Bronze Layer]
-    E --> F[Agentic AI\n(agent_runner.py)]
-    F --> G[Email Alerts]
-```
-
----
 
 ## 📂 **Project Structure**
 
@@ -208,6 +195,7 @@ After a successful run, you will see:
 ✔️ ETL logs
 ✔️ AI summary
 ✔️ Email alerts (if needed)
+
 
 
 
