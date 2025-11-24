@@ -1,0 +1,53 @@
+# --- ENV FILES (Very important) ---
+.env
+*.env
+
+# --- Python ---
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+*.egg
+.env/
+
+# --- Jupyter / Notebooks Cache ---
+.ipynb_checkpoints/
+
+# --- Logs ---
+logs/
+*.log
+
+# --- Airflow Folders ---
+docker/airflow/logs/
+docker/airflow/data/*
+!docker/airflow/data/raw/         # Keep raw/ folder but not its contents
+
+# --- Spark / Delta ---
+*.crc
+*.snappy.parquet
+*.parquet
+_metastore/
+_spark_metadata/
+_spark_delta/
+delta/
+
+# --- Docker ---
+*.pid
+docker/airflow/logs/*
+docker/airflow/data/*.json
+docker/airflow/data/*.csv
+docker/postgres-data/
+docker/redis-data/
+volumes/
+
+# --- Databricks local state ---
+databricks/.databricks/
+databricks/.cache/
+
+# --- OS Files ---
+.DS_Store
+Thumbs.db
+
+# --- VSCode ---
+.vscode/

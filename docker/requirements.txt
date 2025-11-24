@@ -1,0 +1,9 @@
+requests
+pandas
+openai
+langchain
+langgraph
+pydantic
+tenacity
+python-dotenv
+databricks-sdk

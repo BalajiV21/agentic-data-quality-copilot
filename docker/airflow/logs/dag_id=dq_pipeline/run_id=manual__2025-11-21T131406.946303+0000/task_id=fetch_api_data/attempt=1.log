@@ -1,0 +1,17 @@
+[2025-11-21T13:14:08.002+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dq_pipeline.fetch_api_data manual__2025-11-21T13:14:06.946303+00:00 [queued]>
+[2025-11-21T13:14:08.009+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dq_pipeline.fetch_api_data manual__2025-11-21T13:14:06.946303+00:00 [queued]>
+[2025-11-21T13:14:08.009+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 2
+[2025-11-21T13:14:08.062+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): fetch_api_data> on 2025-11-21 13:14:06.946303+00:00
+[2025-11-21T13:14:08.069+0000] {standard_task_runner.py:60} INFO - Started process 61 to run task
+[2025-11-21T13:14:08.074+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'dq_pipeline', 'fetch_api_data', 'manual__2025-11-21T13:14:06.946303+00:00', '--job-id', '19', '--raw', '--subdir', 'DAGS_FOLDER/dq_pipeline_dag.py', '--cfg-path', '/tmp/tmpurbjxdcq']
+[2025-11-21T13:14:08.075+0000] {standard_task_runner.py:88} INFO - Job 19: Subtask fetch_api_data
+[2025-11-21T13:14:08.135+0000] {task_command.py:423} INFO - Running <TaskInstance: dq_pipeline.fetch_api_data manual__2025-11-21T13:14:06.946303+00:00 [running]> on host adb6e9c0f6a6
+[2025-11-21T13:14:08.205+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dq_pipeline' AIRFLOW_CTX_TASK_ID='fetch_api_data' AIRFLOW_CTX_EXECUTION_DATE='2025-11-21T13:14:06.946303+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-11-21T13:14:06.946303+00:00'
+[2025-11-21T13:14:08.207+0000] {logging_mixin.py:188} INFO - Fetching Orders...
+[2025-11-21T13:14:08.432+0000] {logging_mixin.py:188} INFO - Fetching Products...
+[2025-11-21T13:14:08.552+0000] {logging_mixin.py:188} INFO - Fetching Users...
+[2025-11-21T13:14:08.681+0000] {logging_mixin.py:188} INFO - All API data downloaded successfully.
+[2025-11-21T13:14:08.682+0000] {python.py:201} INFO - Done. Returned value was: {'orders_path': '/opt/***/data/raw/orders.json', 'products_path': '/opt/***/data/raw/products.json', 'users_path': '/opt/***/data/raw/users.json', 'timestamp': '2025-11-21T13:14:08.682314'}
+[2025-11-21T13:14:08.712+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=dq_pipeline, task_id=fetch_api_data, execution_date=20251121T131406, start_date=20251121T131408, end_date=20251121T131408
+[2025-11-21T13:14:08.768+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-11-21T13:14:08.793+0000] {taskinstance.py:3280} INFO - 1 downstream tasks scheduled from follow-on schedule check

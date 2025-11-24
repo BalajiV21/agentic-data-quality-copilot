@@ -1,0 +1,8 @@
+{
+    "status": "SUCCESS",
+    "orders_rows": 30,
+    "products_rows": 30,
+    "users_rows": 30,
+    "raw_dir": "/opt/airflow/data/raw",
+    "bronze_dir": "/opt/airflow/data/bronze"
+}

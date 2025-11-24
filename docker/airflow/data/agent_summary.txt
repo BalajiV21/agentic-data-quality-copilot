@@ -1,0 +1,3 @@
+1. The ETL process was successful and processed 30 rows each for orders, products, and users. The data was successfully moved from the raw directory to the bronze directory without any issues detected.
+
+ISSUES_FOUND=False
