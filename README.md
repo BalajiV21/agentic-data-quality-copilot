@@ -3,7 +3,6 @@
 
 ### **Modern Data Engineering Pipeline with Airflow • PySpark • Delta Bronze Layer • Agentic AI Alerts (via OpenAI)**
 
-Built by: **Balaji Viswanathan**
 
 ---
 
@@ -129,7 +128,7 @@ http://localhost:8080
 
 ---
 
-# ▶️ **Trigger the DAG**
+# **Trigger the DAG**
 
 In Airflow UI → Trigger “dq_pipeline”
 
@@ -190,11 +189,12 @@ ISSUES_FOUND=True
 
 After a successful run, you will see:
 
-✔️ Raw files
-✔️ Bronze data
-✔️ ETL logs
-✔️ AI summary
-✔️ Email alerts (if needed)
+- Raw files
+- Bronze data
+- ETL logs
+- AI summary
+- Email alerts (if needed)
+
 
 
 
