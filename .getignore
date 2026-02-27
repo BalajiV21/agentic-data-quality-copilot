@@ -1,4 +1,4 @@
-# --- ENV FILES (Very important) ---
+# --- ENV FILES ---
 .env
 *.env
 
